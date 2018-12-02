@@ -4,7 +4,7 @@ MAINTAINER Florian Schwab <me@ydkn.de>
 # update system
 RUN apk --no-cache --no-progress upgrade
 
-# install bind
+# install BIND
 RUN apk --no-cache --no-progress add bind
 
 # create default config
