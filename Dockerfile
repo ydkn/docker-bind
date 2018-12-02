@@ -14,7 +14,7 @@ RUN cp /etc/bind/named.conf.recursive /etc/bind/named.conf
 VOLUME ["/etc/bind"]
 
 # default command
-CMD ["/usr/sbin/named", "-g"]
+CMD ["named", "-u", "named", "-g"]
 
 # ports
 EXPOSE 53 53/udp
